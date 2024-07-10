@@ -6,7 +6,7 @@ I probably would have signed up if I didn't notice that team blind renders all t
 
 I then looked through the client side HTML in my browser and discovered the text I wanted embeddded within a handful of div elements. However, I wouldn't need to seep through the divs to get to the text if I knew the class name associated with the elements containing comment text.
 
-Therefore, I used python requests to send a get request for the forum's HTML (with a modified user-agent to circumvent bot detection) and used the BeautifulSoup4 package to scrape the HTML response for <p> tags with the class="whitespace-pre-wrap break-words text-sm/5 text-gray-999 md:text-base/6". 
+Therefore, I used python requests to send a get request for the forum's HTML (with a modified user-agent to circumvent bot detection) and used the BeautifulSoup4 package to scrape the HTML response for p elements with the class="whitespace-pre-wrap break-words text-sm/5 text-gray-999 md:text-base/6". 
 
 Current state has basic functionality
 Output is sent to the terminal
